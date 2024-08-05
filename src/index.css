@@ -1,0 +1,78 @@
+
+
+/* .kzui-select {
+  position: relative;
+  width: 200px;
+}
+
+.kzui-select__control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.kzui-select__value {
+  flex-grow: 1;
+}
+
+.kzui-select__clear-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.kzui-select__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fff;
+  z-index: 1000;
+}
+
+.kzui-select__search {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.kzui-select__options {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.kzui-select__option {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.kzui-select__option--selected {
+  background: #e6e6e6;
+}
+
+.kzui-select__group {
+  padding: 8px 0;
+}
+
+.kzui-select__group-label {
+  padding: 8px;
+  font-weight: bold;
+}
+
+.kzui-select--disabled {
+  opacity: 0.6;
+  pointer-events: none;
+} */
+
+
+
+.kzui-select-container{
+    background-color: bisque;
+    max-height: 100vh;
+    
+}
