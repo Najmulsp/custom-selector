@@ -1,17 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from 'react';
+import CustomSelect from './components/CustomSelect';
 
-import CustomSelects from './components/CustomSelects'
+const App = () => {
+  const groupedOptions = [
+    {
+      groupLabel: '',
+      items: ['HTML', 'CSS', 'Tailwind CSS', 'JavaScript', 'ES6', 'React JS', 'Next JS', 'Redux', 'TypeScript']
+    }
+  ];
 
-function App() {
-  
+  const [value, setValue] = useState([]);
+
+  const handleChange = (newValue) => {
+    setValue(newValue);
+  };
+
+  const handleSearch = (searchTerm) => {
+    console.log('Searching for:', searchTerm);
+  };
 
   return (
-    <>
-      <CustomSelects></CustomSelects>
-    </>
-  )
-}
+    <div className="kzui-app">
+      <h1 className='kzui-select-text'>1. Select Your Skills Here:</h1>
+      <div className='kzui-select-container'>
+        <CustomSelect
+          isClearable
+          isSearchable
+          isMulti
+          options={groupedOptions}
+          value={value}
+          placeholder="Select..."
+          isGrouped
+          onChangeHandler={handleChange}
+          onSearchHandler={handleSearch}
+        />
+      </div>
+    </div>
+  );
+};
 
-export default App
+export default App;
