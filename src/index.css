@@ -1,5 +1,5 @@
 .kzui-app {
-  border: 5px solid red;
+  
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -15,6 +15,12 @@
 
 .kzui-select__search{
 border: 2px solid grey;
+position: relative;
+}
+.kzui-search-icon{
+  position: absolute;
+  top: 7px;
+  right: 10px;
 }
 
 .kzui-select {
@@ -91,11 +97,7 @@ border: 2px solid grey;
 }
 
 .kzui-select__option:hover {
-  background-color: cadetblue;
-}
-
-.kzui-select__option--selected {
-  /* background: #e6e6e6; */
+  background-color: silver;
 }
 
 .kzui-select__group {

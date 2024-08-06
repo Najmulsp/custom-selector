@@ -4,7 +4,7 @@ import CustomSelect from './components/CustomSelect';
 const App = () => {
   const groupedOptions = [
     {
-      groupLabel: '',
+      groupLabel:'',
       items: ['HTML', 'CSS', 'Tailwind CSS', 'JavaScript', 'ES6', 'React JS', 'Next JS', 'Redux', 'TypeScript']
     }
   ];
@@ -29,7 +29,7 @@ const App = () => {
           isMulti
           options={groupedOptions}
           value={value}
-          placeholder="Select..."
+          placeholder="Click to select..."
           isGrouped
           onChangeHandler={handleChange}
           onSearchHandler={handleSearch}

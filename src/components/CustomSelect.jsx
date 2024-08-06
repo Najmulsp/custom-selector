@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-
+import { FaSearch } from "react-icons/fa";
 
 const CustomSelect = ({
   isClearable = false,
@@ -48,7 +48,7 @@ const CustomSelect = ({
       setIsOpen(false);
     }
     setSelectedValues(newValue);
-    // setDisabledOptions([...disabledOptions, option]);
+    
     if (onChangeHandler) {
       onChangeHandler(newValue);
     }
@@ -99,13 +99,16 @@ const CustomSelect = ({
       {isOpen && (
         <div className="kzui-select__menu">
           {isSearchable && (
+            <>
+            
             <input
               type="text"
               className="kzui-select__search"
               value={search}
               onChange={handleSearch}
-              placeholder="Search..."
-            />
+              placeholder="Search..."/>
+              <FaSearch className='kzui-search-icon'/>
+              </>
           )}
           <div className="kzui-select__options">
             {filteredOptions.map(option =>
