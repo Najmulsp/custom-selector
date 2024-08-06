@@ -48,6 +48,7 @@ const CustomSelect = ({
       setIsOpen(false);
     }
     setSelectedValues(newValue);
+    // setDisabledOptions([...disabledOptions, option]);
     if (onChangeHandler) {
       onChangeHandler(newValue);
     }
@@ -124,8 +125,8 @@ const CustomSelect = ({
               ) : (
                 <div
                   key={option}
-                  className={`kzui-select__option ${selectedValues.includes(option) ? 'kzui-select__option--selected' : ''}`}
-                  onClick={() => handleSelect(option)}
+                  className={`kzui-select__option ${selectedValues.includes(option) ? 'kzui-select__option--disabled' : ''}`}
+                  onClick={() => !selectedValues.includes(option) && handleSelect(option)}
                 >
                   {option}
                 </div>
